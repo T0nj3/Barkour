@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+.game-background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.game-container {
+    position: absolute;
+    background-image: url('/img/forest-game-background-vector.jpg');
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 66.67%;
+    height: 75%; 
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 15px; 
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.dog {
+    position: absolute;
+    bottom: 80px;
+    left: 2%;
+    width: 250px;
+    height: 150px;
+    background-image: url('/img/result.png'); 
+    background-size: cover;
+    border-radius: 50%; 
+    transition: left 0.2s linear;
+}
+
+.obstacle {
+    position: absolute;
+    bottom: 80px; 
+    width: 100px; 
+    height: 70px; 
+    background-image: url('/img/result\ \(1\).png'); 
+    background-size: cover; 
+}
